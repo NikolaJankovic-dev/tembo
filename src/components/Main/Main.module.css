@@ -1,0 +1,15 @@
+:root {
+  --card-height: 40vw;
+  --card-margin: 40vw;
+  --card-top-offset: 1em;
+  --numcards: 3;
+  --outline-width: 10px;
+}
+
+.main {
+  width: 50vw;
+  margin: 0 auto;
+  text-align: center;
+  z-index: -10;
+}
+/*# sourceMappingURL=Main.module.css.map */

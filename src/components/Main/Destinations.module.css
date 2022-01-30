@@ -1,0 +1,114 @@
+:root {
+  --card-height: 40vw;
+  --card-top-offset: 1em;
+  --numcards: 3;
+  --outline-width: 10px;
+}
+
+.title {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 32px;
+  font-size: 32px;
+}
+
+.cards {
+  padding-left: 0;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.cards:nth-child(1) {
+  --index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 64px;
+}
+
+.cards:nth-child(2) {
+  --index: 2;
+}
+
+.cards:nth-child(3) {
+  --index: 3;
+}
+
+.card {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin-top: 100px;
+  height: var(--card-height);
+  -webkit-box-shadow: inset 20px 20px 60px #cccccc, inset -20px -20px 60px #dcdcdc;
+          box-shadow: inset 20px 20px 60px #cccccc, inset -20px -20px 60px #dcdcdc;
+  border-radius: 1em;
+  border: lightgray solid 1px;
+  z-index: 1;
+}
+
+.kenya {
+  top: 80px;
+}
+
+.egypt {
+  top: 140px;
+}
+
+.tanzania {
+  top: 180px;
+}
+
+.content {
+  background: linear-gradient(45deg, #e6e6e6, #ffffff);
+  color: #0a0507;
+  border-radius: 1em;
+  overflow: hidden;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "text img";
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.content > div {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: text;
+  width: 100%;
+  place-items: start;
+  text-align: left;
+}
+
+.content > div h2 {
+  margin: 10px 10px 30px;
+}
+
+.content > div div {
+  margin: 10px;
+  text-align: justify;
+}
+
+.content > figure {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: img;
+  overflow: hidden;
+  margin: 0;
+}
+
+.content > figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=Destinations.module.css.map */
