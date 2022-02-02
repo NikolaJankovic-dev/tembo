@@ -25,11 +25,11 @@ const Footer = () => {
         alt="header"
         className={style.background}
       />{" "}
-      <img
+      {/* <img
         src="https://paperpillar.com/assets/images/footer-white-mask-lg.png"
         alt="wave"
         className={style.wave}
-      />
+      /> */}
       <h1 className={style.travel}>Intrested in travel with us?</h1>
       <button onClick={openModal} className={style.footbtn} id="btn">
         <span> LET'S TALK!</span>

@@ -4,16 +4,28 @@
   --numcards: 3;
   --outline-width: 10px;
 }
+.destinations {
+  color: #f3f7fc;
+  // backdrop-filter: blur( 14px );
+  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #040405, -2px 2px 0 #000000, -2px -2px 0 #050a0f, 2px 0px 0 #010203, 0px 2px 0 #060c13, -2px 0px 0 #05080c, 0px -2px 0 #0f1925;
+}
 .title {
-  position: sticky;
+  // position: sticky;
   top: 32px;
   font-size: 32px;
+  // background: #ffffff40;
+  // padding-bottom: 32px;
+  margin: 0;
+
 }
 .cards {
   padding-left: 0;
   list-style: none;
   display: grid;
   grid-template-columns: 1fr;
+  margin: 0;
+  // background: #ffffff40;
+
 }
 .cards:nth-child(1) {
   --index: 1;
@@ -28,14 +40,18 @@
 }
 
 .card {
-  position: sticky;
+  // position: sticky;
   top: 0;
   margin-top: 100px;
   height: var(--card-height);
-  box-shadow: inset 20px 20px 60px #cccccc, inset -20px -20px 60px #dcdcdc;
+  // box-shadow: inset 20px 20px 60px #cccccc, inset -20px -20px 60px #dcdcdc;
   border-radius: 1em;
-  border: rgb(211, 211, 211) solid 1px;
+  // border: rgb(211, 211, 211) solid 1px;
   z-index: 1;
+   backdrop-filter: blur( 14px );
+  background: #ffffff40;
+
+
 }
 .kenya {
   top: 80px;
@@ -47,8 +63,8 @@
   top: 180px;
 }
 .content {
-  background: linear-gradient(45deg, #e6e6e6, #ffffff);
-  color: rgb(10, 5, 7);
+  // background: linear-gradient(45deg, #e6e6e6, #ffffff);
+  // color: rgb(10, 5, 7);
   border-radius: 1em;
   overflow: hidden;
   height: 100%;

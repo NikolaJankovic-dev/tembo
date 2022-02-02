@@ -58,11 +58,11 @@ const Header = () => {
         alt="header"
         className={style.background}
       />
-      <img
+      {/* <img
         src="https://i.imgur.com/C0L5p5h.png"
         alt="wave"
         className={style.wave}
-      />
+      /> */}
       <div className={style.logoWrap}>
         <img
           src="https://i.imgur.com/01Cgnk0.png"
